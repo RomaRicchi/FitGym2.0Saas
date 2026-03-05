@@ -1,4 +1,4 @@
-# 🏋️‍♂️ Sistema de Gestión para Gimnasios por Turnos Fijos
+# 🏋️‍♂️ Sistema de Gestión para Gimnasios SaaS desarrollado en Zinnia<code>
 
 ## 📚 Documentación del Proyecto
 
