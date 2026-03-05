@@ -1,1 +1,0 @@
-{"success":true,"message":"Logo subido correctamente","data":{"url":"/uploads/branding/logos/tenant_1_logo_4108d885-b137-4c4a-9abe-48a5e9841cbf.png"},"errors":[],"statusCode":200,"timestamp":"2026-02-19T21:30:30.7292935Z"}
