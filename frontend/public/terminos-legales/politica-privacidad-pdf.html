@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politica de Privacidad - Flow Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                padding: 20px;
+            }
+            .container {
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: #000;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        h6 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            color: #000;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        strong {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #000;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+
+        .alert-danger {
+            border-left-color: #000;
+            background: #f5f5f5;
+        }
+
+        .alert-warning {
+            border-left-color: #000;
+            background: #f5f5f5;
+        }
+
+        .alert-success {
+            border-left-color: #000;
+            background: #f5f5f5;
+        }
+
+        .alert-info {
+            border-left-color: #000;
+            background: #f5f5f5;
+        }
+
+        .highlight-box {
+            background: #f9f9f9;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .print-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .print-btn:hover {
+            background: #333;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #000;
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+        }
+
+        hr {
+            border-color: #000;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">IMPRIMIR / GUARDAR PDF</button>
+
+    <div class="container">
+        <h1>POLITICA DE PRIVACIDAD</h1>
+        <p class="subtitle">Flow Manager - Plataforma de Gestion de Negocios</p>
+        <p class="subtitle">Ultima actualizacion: <script>document.write(new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' }))</script></p>
+
+        <div class="alert alert-success">
+            <h6 style="margin-bottom: 5px;">Ley 25.326 de Proteccion de Datos Personales</h6>
+            <p style="margin: 0;">Flow Manager cumple con la legislacion argentina de proteccion de datos personales. Al utilizar nuestro servicio, aceptas esta politica de privacidad.</p>
+        </div>
+
+        <hr>
+
+        <h2>1. Responsable del Tratamiento de Datos</h2>
+        <p>
+            El <strong>Responsable del Tratamiento</strong> de los datos personales es:
+        </p>
+        <ul>
+            <li><strong>Denominacion:</strong> Zinnia</li>
+            <li><strong>Domicilio:</strong> Ciudad Autonoma de Buenos Aires, Argentina</li>
+            <li><strong>Sitio web:</strong> www.zinnia-code.com</li>
+        </ul>
+        <p>
+            Zinnia garantiza el cumplimiento de la Ley 25.326 de Proteccion de Datos Personales
+            y sus normas reglamentarias, asi como de la normativa nacional e internacional
+            aplicable en materia de proteccion de datos.
+        </p>
+
+        <h2>2. Datos Personales que Recopilamos</h2>
+        <p>
+            Flow Manager recopila y trata los siguientes datos personales de <strong>dos categorias</strong> de sujetos:
+        </p>
+
+        <h3>Datos del Cliente (Administrador del Negocio)</h3>
+        <ul>
+            <li><strong>Datos de identificacion:</strong> Nombre completo, DNI/CUIT, email, telefono</li>
+            <li><strong>Datos de facturacion:</strong> Direccion, datos fiscales, informacion de pago</li>
+            <li><strong>Datos de acceso:</strong> Usuario, contrasena (encriptada), historial de sesiones</li>
+            <li><strong>Datos de uso:</strong> IP, navegador, dispositivo, fecha y hora de acceso</li>
+        </ul>
+
+        <h3>Datos de los Clientes (miembros de los negocios)</h3>
+        <p style="font-size: 12px; color: #666;">
+            <em>Estos datos son proporcionados por el Cliente y estan bajo su responsabilidad.</em>
+        </p>
+        <ul>
+            <li><strong>Datos de identificacion:</strong> Nombre, apellido, DNI, fecha de nacimiento</li>
+            <li><strong>Datos de contacto:</strong> Email, telefono, direccion</li>
+            <li><strong>Datos de salud:</strong> Peso, altura, condiciones medicas declaradas</li>
+            <li><strong>Datos de pago:</strong> Tarjeta de credito, debito, suscripciones</li>
+            <li><strong>Datos de actividad:</strong> Asistencias, rutinas, evolucion fisica</li>
+        </ul>
+
+        <div class="alert alert-warning">
+            <p style="margin: 0; font-size: 13px;">
+                <strong>Importante:</strong> Zinnia actua solo como <strong>encargado del tratamiento</strong>
+                de los datos de los clientes. El Cliente (negocio) es el <strong>responsable</strong> de haber
+                obtenido el consentimiento correspondiente de sus clientes.
+            </p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>3. Finalidad del Tratamiento de Datos</h2>
+        <p>
+            Los datos personales recopilados seran utilizados para las siguientes finalidades:
+        </p>
+
+        <h3>Finalidades Principales</h3>
+        <ul>
+            <li><strong>Prestacion del servicio:</strong> Gestionar la plataforma de negocio</li>
+            <li><strong>Gestion de clientes:</strong> Control de accesos, membresias, pagos</li>
+            <li><strong>Facturacion:</strong> Emitir comprobantes y cobrar servicios</li>
+            <li><strong>Soporte tecnico:</strong> Resolver problemas y consultas</li>
+            <li><strong>Mejora del servicio:</strong> Analizar uso para optimizar funcionalidades</li>
+        </ul>
+
+        <h3>Finalidades Secundarias (con consentimiento separado)</h3>
+        <ul>
+            <li><strong>Marketing:</strong> Envio de novedades, promociones (solo si el Cliente lo acepta)</li>
+            <li><strong>Analytics:</strong> Estadisticas de uso agregadas (datos anonimos)</li>
+            <li><strong>Segmentacion:</strong> Personalizacion de experiencia (datos anonimizados)</li>
+        </ul>
+
+        <div class="alert alert-info">
+            <p style="margin: 0; font-size: 13px;">
+                <strong>Principio de finalidad:</strong> Los datos no seran utilizados para fines
+                incompatibles con los descritos sin el consentimiento expreso del titular.
+            </p>
+        </div>
+
+        <h2>4. Base Legal para el Tratamiento</h2>
+        <p>
+            El tratamiento de datos personales por parte de Zinnia se fundamenta en las siguientes bases legales:
+        </p>
+        <ul>
+            <li>
+                <strong>Consentimiento del titular:</strong> El Cliente acepta estos Terminos y
+                la Politica de Privacidad al registrarse
+            </li>
+            <li>
+                <strong>Contrato:</strong> Ejecucion del contrato de prestacion de servicios SaaS
+            </li>
+            <li>
+                <strong>Obligacion legal:</strong> Cumplimiento de obligaciones fiscales y contables
+            </li>
+            <li>
+                <strong>Interes legitimo:</strong> Seguridad, prevencion de fraudes, mejora del servicio
+            </li>
+        </ul>
+
+        <h2>5. Destinatarios de los Datos</h2>
+        <p>
+            Los datos personales <strong>NO seran compartidos con terceros</strong>, excepto en los siguientes casos:
+        </p>
+
+        <h3>Comunicaciones Permitidas</h3>
+        <ul>
+            <li>
+                <strong>Procesadores de pago:</strong> MercadoPago, entidades bancarias
+                (necesario para procesar cobros)
+            </li>
+            <li>
+                <strong>Proveedores de infraestructura:</strong> Servicios de nube (AWS, Azure, etc.)
+                (necesario para almacenar datos)
+            </li>
+            <li>
+                <strong>Autoridades administrativas/judiciales:</strong> Cuando sean requeridos por ley
+            </li>
+            <li>
+                <strong>Empresas del mismo grupo:</strong> Solo para fines operativos internos
+            </li>
+        </ul>
+
+        <h3>Comunicaciones Prohibidas</h3>
+        <ul>
+            <li><strong>Venta de datos:</strong> Zinnia NUNCA vende datos personales</li>
+            <li><strong>Marketing para terceros:</strong> No compartimos datos con fines publicitarios</li>
+            <li><strong>Transferencias internacionales:</strong> Sin garantias adecuadas (GDPR)</li>
+        </ul>
+
+        <div class="alert alert-danger">
+            <p style="margin: 0; font-size: 13px;">
+                <strong>Prohibicion absoluta:</strong> Los datos de los clientes de los negocios
+                nunca seran compartidos, vendidos o comercializados con terceros sin consentimiento
+                explicito del titular y del Cliente.
+            </p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>6. Medidas de Seguridad</h2>
+        <p>
+            Zinnia implementa medidas tecnicas y organizativas de seguridad para proteger los datos personales:
+        </p>
+
+        <h3>Medidas Tecnicas</h3>
+        <ul>
+            <li><strong>Encriptacion SSL/TLS:</strong> Datos en transito cifrados</li>
+            <li><strong>Encriptacion en reposo:</strong> Base de datos cifrada</li>
+            <li><strong>Hash de contrasenias:</strong> Almacenamiento seguro (bcrypt)</li>
+            <li><strong>Autenticacion 2FA:</strong> Doble factor de autenticacion disponible</li>
+            <li><strong>Backups automaticos:</strong> Copias de seguridad diarias</li>
+            <li><strong>Firewalls y WAF:</strong> Proteccion contra ataques</li>
+            <li><strong>Monitoreo 24/7:</strong> Deteccion de accesos no autorizados</li>
+        </ul>
+
+        <h3>Medidas Organizativas</h3>
+        <ul>
+            <li><strong>Control de accesos:</strong> Solo personal autorizado</li>
+            <li><strong>Capacitacion:</strong> Formacion en proteccion de datos</li>
+            <li><strong>Protocolos de respuesta:</strong> Procedimientos ante incidentes</li>
+            <li><strong>Confidencialidad:</strong> Acuerdos de secreto con empleados</li>
+        </ul>
+
+        <p>
+            A pesar de estas medidas, ningun sistema es 100% seguro. En caso de brecha de seguridad,
+            Zinnia notificara a los afectados y a la Agencia de Acceso a la Informacion Publica
+            dentro de las 72hs, segun lo establece la Ley 25.326.
+        </p>
+
+        <h2>7. Derechos ARCO (Acceso, Rectificacion, Cancelacion, Oposicion)</h2>
+        <p>
+            Segun la <strong>Ley 25.326</strong>, el titular de los datos personales tiene los siguientes derechos:
+        </p>
+
+        <h3>Derecho de Acceso</h3>
+        <p>
+            El Cliente puede solicitar <strong>acceso a sus datos personales</strong> para conocer que informacion
+            tenemos sobre el y su negocio.
+        </p>
+
+        <h3>Derecho de Rectificacion</h3>
+        <p>
+            El Cliente puede solicitar la <strong>correccion de datos inexactos</strong> o incompletos.
+        </p>
+
+        <h3>Derecho de Cancelacion/Supresion</h3>
+        <p>
+            El Cliente puede solicitar la <strong>eliminacion de sus datos</strong> cuando:
+        </p>
+        <ul>
+            <li>Ya no son necesarios para la finalidad por la que fueron recopilados</li>
+            <li>Retira el consentimiento (si el tratamiento se basa en el)</li>
+            <li>Se opone al tratamiento y no hay motivo legitimo prevalente</li>
+        </ul>
+
+        <h3>Derecho de Oposicion</h3>
+        <p>
+            El Cliente puede <strong>oponerse al tratamiento</strong> de sus datos por motivos legitimos.
+        </p>
+
+        <h3>Derecho de Portabilidad</h3>
+        <p>
+            El Cliente puede recibir sus datos en un formato estructurado y transmitirlos a otro servicio.
+        </p>
+
+        <h3>Como ejercer estos derechos?</h3>
+        <div class="alert alert-info">
+            <p style="margin: 0 0 5px 0;">
+                <strong>Contacto:</strong> Ante cualquier problema, los clientes pueden contactarnos a traves de la informacion en <strong>www.zinnia-code.com</strong>
+            </p>
+            <p style="margin: 0 0 5px 0;">
+                <strong>Informacion requerida:</strong>
+            </p>
+            <ul style="margin: 0; padding-left: 20px;">
+                <li>Nombre completo y DNI/CUIT del solicitante</li>
+                <li>Datos de contacto (email, telefono)</li>
+                <li>Derecho que desea ejercer (acceso, rectificacion, cancelacion, oposicion)</li>
+                <li>Descripcion clara de la solicitud</li>
+            </ul>
+            <p style="margin: 5px 0 0 0;">
+                <strong>Plazo de respuesta:</strong> <strong>10 dias habiles</strong> desde la recepcion
+                de la solicitud (Art. 14, Ley 25.326)
+            </p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <h2>8. Conservacion de Datos</h2>
+        <p>
+            Los datos personales seran conservados durante el tiempo necesario para cumplir con las
+            finalidades descritas y las obligaciones legales aplicables:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Durante la relacion contractual:</strong> Mientras el Cliente utilice el servicio
+            </li>
+            <li>
+                <strong>Tras cancelacion:</strong> <strong>90 dias</strong> en archivo (por seguridad legal)
+            </li>
+            <li>
+                <strong>Datos con obligacion legal:</strong> Hasta cumplir con obligaciones fiscales
+                (generalmente 5-10 anos segun normativa tributaria)
+            </li>
+            <li>
+                <strong>Datos anonimizados:</strong> Pueden conservarse indefinidamente para estadisticas
+            </li>
+        </ul>
+
+        <div class="alert alert-warning">
+            <p style="margin: 0; font-size: 13px;">
+                <strong>Importante:</strong> Transcurrido el plazo de conservacion, los datos seran
+                <strong>eliminados</strong> o <strong>anonimizados</strong> de forma segura.
+            </p>
+        </div>
+
+        <h2>9. Datos de Menores de Edad</h2>
+        <p>
+            Flow Manager <strong>no recopila intencionalmente datos de menores de 18 anos</strong>.
+        </p>
+        <p>
+            En caso que un negocio tenga clientes menores, el Cliente (responsable del negocio) debe:
+        </p>
+        <ul>
+            <li>Obtener el consentimiento explicito de los padres/tutores</li>
+            <li>Informar sobre el tratamiento de los datos del menor</li>
+            <li>Asumir la responsabilidad legal correspondiente</li>
+        </ul>
+        <p>
+            Si se detecta que se han recopilado datos de menores sin consentimiento parental,
+            se procedera a su eliminacion inmediata.
+        </p>
+
+        <h2>10. Modificaciones de la Politica de Privacidad</h2>
+        <p>
+            Zinnia se reserva el derecho de modificar esta Politica de Privacidad para:
+        </p>
+        <ul>
+            <li>Adaptarse a cambios legislativos</li>
+            <li>Incorporar nuevas funcionalidades del servicio</li>
+            <li>Mejorar la claridad de la informacion</li>
+        </ul>
+        <p>
+            Los cambios seran notificados con <strong>30 dias de anticipacion</strong> mediante:
+        </p>
+        <ul>
+            <li>Aviso en el panel de administracion</li>
+            <li>Actualizacion de la fecha de "Ultima modificacion"</li>
+        </ul>
+        <p>
+            El uso continuado del servicio tras la modificacion constituira la aceptacion de la nueva politica.
+        </p>
+
+        <h2>11. Contacto y Denuncias</h2>
+        <p>
+            Para consultas, ejercer derechos ARCO, o presentar denuncias sobre proteccion de datos:
+        </p>
+
+        <h3>Contacto Directo</h3>
+        <ul>
+            <li><strong>Sitio web:</strong> www.zinnia-code.com</li>
+            <li><strong>Formulario:</strong> Seccion "Ayuda" del panel</li>
+        </ul>
+
+        <h3>Autoridad de Control (Argentina)</h3>
+        <div class="alert alert-info">
+            <p style="margin: 0 0 5px 0;"><strong>Agencia de Acceso a la Informacion Publica (AAIP)</strong></p>
+            <p style="margin: 0 0 5px 0;"><strong>Direccion:</strong> Moreno 750, Ciudad Autonoma de Buenos Aires</p>
+            <p style="margin: 0 0 5px 0;"><strong>Telefono:</strong> +54 11 4238-4800</p>
+            <p style="margin: 0 0 5px 0;"><strong>Email:</strong> derechoacceso@jgm.gob.ar</p>
+            <p style="margin: 0;"><strong>Web:</strong> <a href="https://www.argentina.gob.ar/aaip" target="_blank">https://www.argentina.gob.ar/aaip</a></p>
+        </div>
+
+        <p>
+            El titular tiene derecho a interponer denuncia ante la AAIP si considera que
+            el tratamiento de sus datos vulnera la Ley 25.326.
+        </p>
+
+        <div class="footer">
+            <hr>
+            <p><strong>Zinnia - Flow Manager</strong> © <script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados</p>
+            <p>Este documento fue generado el <script>document.write(new Date().toLocaleDateString('es-AR'))</script></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantillas de Documentos Legales - GymSaaS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .alert {
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #ff6b35;
+            background: #fff8f0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            border-left-color: #dc3545;
+            background: #f8d7da;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-icon {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .print-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px 24px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .print-btn:hover {
+            background: #555;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #666;
+        }
+
+        a {
+            color: #ff6b35;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">🖨️ Imprimir esta página</button>
+
+    <div class="container">
+        <h1>📄 Plantillas de Documentos Legales</h1>
+        <p class="subtitle">Modelos en blanco para completar con abogado</p>
+
+        <div class="alert alert-danger">
+            <h6 style="margin-bottom: 10px;">⚠️ Aviso Importante</h6>
+            <p style="margin: 0;">
+                <strong>Estas plantillas son modelos base que DEBEN ser completados y revisados por un abogado</strong>
+                antes de su uso. No tienen validez legal hasta ser debidamente firmados por un profesional del derecho matriculado.
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <a href="terminos-condiciones-plantilla.html" class="card">
+                <span class="card-icon">📜</span>
+                <span class="card-title">Términos y Condiciones</span>
+                <span class="card-desc">Plantilla con 17 secciones en blanco para completar</span>
+                <span class="card-meta">Versión 2.0 - Febrero 2026</span>
+            </a>
+
+            <a href="politica-privacidad-plantilla.html" class="card">
+                <span class="card-icon">🔒</span>
+                <span class="card-title">Política de Privacidad</span>
+                <span class="card-desc">Plantilla con 11 secciones - Ley 25.326</span>
+                <span class="card-meta">Cumple GDPR y CCPA</span>
+            </a>
+
+            <a href="politica-cookies-plantilla.html" class="card">
+                <span class="card-icon">🍪</span>
+                <span class="card-title">Política de Cookies</span>
+                <span class="card-desc">Plantilla con 7 secciones en blanco</span>
+                <span class="card-meta">Normativas internacionales</span>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3 style="margin-bottom: 10px;">📖 Cómo Usar estas Plantillas</h3>
+            <p style="margin-bottom: 10px;">
+                <strong>1. Descargar:</strong> Haz clic en cualquier plantilla arriba para abrirla en tu navegador
+            </p>
+            <p style="margin-bottom: 10px;">
+                <strong>2. Exportar a PDF:</strong> Usa el botón "Imprimir/Guardar PDF" y selecciona "Guardar como PDF"
+            </p>
+            <p style="margin-bottom: 10px;">
+                <strong>3. Completar:</strong> Llena todos los campos marcados como [PLACEHOLDER] con la información de tu empresa
+            </p>
+            <p style="margin: 0;">
+                <strong>4. Revisar legal:</strong> Envía el documento a un abogado para su revisión y aprobación
+            </p>
+        </div>
+
+        <div class="info-box" style="margin-top: 20px; background: #fff3cd; border-left-color: #ffc107;">
+            <h6 style="margin-bottom: 10px;">💡 Consejos para el Abogado</h6>
+            <p style="margin-bottom: 5px; margin: 0;">• Asegúrate de incluir todas las cláusulas necesarias según tu tipo de negocio</p>
+            <p style="margin-bottom: 5px; margin: 0;">• Verifica el cumplimiento con Ley 25.326 de Protección de Datos Personales</p>
+            <p style="margin-bottom: 5px; margin: 0;">• Considera agregar cláusulas específicas para tu actividad (SaaS, gestión de gimnasios, etc.)</p>
+            <p style="margin: 0;">• Incluye datos de contacto completo: email, teléfono, domicilio legal</p>
+        </div>
+
+        <div class="footer">
+            <hr>
+            <p><strong>GymSaaS</strong> © <script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados</p>
+            <p>Última actualización: <script>document.write(new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' }))</script></p>
+            <p style="margin-top: 10px;">
+                <strong>Documentos:</strong> <a href="../index.html">Volver al índice principal</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

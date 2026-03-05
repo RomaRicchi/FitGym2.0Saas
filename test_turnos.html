@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Turnos Endpoint</title>
+</head>
+<body>
+    <h1>Test Turnos API</h1>
+    <button onclick="testEndpoint()">Test /api/suscripcionturno/con-checkin</button>
+    <pre id="result"></pre>
+
+    <script>
+        // Token admin (reemplazar con uno válido si expira)
+        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMSIsImVtYWlsIjoiYWRtaW5AZ3ltLmNvbSIsInJvbCI6IkFkbWluaXN0cmFkb3IiLCJwZXJzb25hbF9pZCI6IjIzIiwiYWxpYXMiOiJBZG1pbiIsInRlbmFudF9pZCI6IjEiLCJleHAiOjE3NzA1Njc1NTAsImlzcyI6Ikd5bVNhYXNBUEkiLCJhdWQiOiJHeW1TYWFzRnJvbnRlbmQiLCJqdGkiOiI5OWFkY2JiMC01YWMyLTRjZjgtODQxMS1iNzE1OTExYzc3MzUifQ.8OrpJXBPLWxNXHQ5I1vGj_jKqavxHGkP_AyflkfnR1w';
+
+        async function testEndpoint() {
+            const resultEl = document.getElementById('result');
+            resultEl.textContent = 'Loading...';
+
+            try {
+                const response = await fetch('http://localhost:5144/api/suscripcionturno/con-checkin', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+                resultEl.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                resultEl.textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

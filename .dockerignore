@@ -1,0 +1,48 @@
+# .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+*.cache
+*.lock.json
+
+# Visual Studio
+.vs/
+.vscode/
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.local
+*.Local.json
+
+# Git
+.git/
+.gitignore
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Documentation
+*.md
+docs/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
+*.log

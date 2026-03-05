@@ -1,0 +1,1 @@
+{"success":true,"message":"Fondo subido correctamente","data":{"url":"/uploads/branding/backgrounds/tenant_1_bg_d0da06e5-ccb5-4b73-816d-e0d317d4b275.png"},"errors":[],"statusCode":200,"timestamp":"2026-02-19T21:30:53.4927005Z"}

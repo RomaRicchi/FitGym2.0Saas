@@ -1,0 +1,804 @@
+/* === 🎨 ESTILO GLOBAL DE MODALES SWEETALERT2 (RESPONSIVE) === */
+
+/* Títulos con color primario y tamaño reducido */
+.swal2-card-style .swal2-title {
+  color: var(--tenant-primary-color) !important;
+  font-size: 1rem !important;
+}
+
+.swal2-card-style {
+  background-color: var(--tenant-secondary-color) !important;
+  border-radius: 1rem !important;
+  padding: 2rem 2.5rem !important;
+  max-width: 95vw !important;
+  width: auto !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25) !important;
+  color: #222 !important;
+  overflow-y: auto !important;
+  max-height: 95vh !important;
+}
+
+/* === Media queries para diferentes tamaños === */
+@media (min-width: 576px) {
+  .swal2-card-style {
+    max-width: 500px !important;
+    padding: 2rem 2.5rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .swal2-card-style {
+    padding: 1.5rem 1rem !important;
+    max-width: 95vw !important;
+  }
+}
+
+/* === Ocultar selects creados automáticamente por SweetAlert2 === */
+.swal2-select {
+  display: none !important;
+}
+
+/* === TÍTULOS Y TEXTOS (RESPONSIVE) === */
+.swal2-popup .swal2-title,
+.swal2-title {
+  color: var(--tenant-primary-color) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (min-width: 576px) {
+  .swal2-popup .swal2-title,
+  .swal2-title {
+    font-size: 1rem !important;
+  }
+}
+
+/* Selectores ultra específicos */
+.swal2-container .swal2-popup .swal2-title {
+  color: var(--tenant-primary-color) !important;
+  font-size: 1rem !important;
+}
+
+/* Sobrescribir estilos inline en elementos h2/div dentro del título */
+.swal2-popup .swal2-title h2,
+.swal2-popup .swal2-title div,
+.swal2-card-style .swal2-title h2,
+.swal2-card-style .swal2-title div {
+  color: var(--tenant-primary-color) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+/* Iconos dentro de h2/div en títulos */
+.swal2-popup .swal2-title h2 i,
+.swal2-popup .swal2-title div i,
+.swal2-card-style .swal2-title h2 i,
+.swal2-card-style .swal2-title div i,
+.swal2-popup .swal2-title h2 .fa-solid,
+.swal2-popup .swal2-title h2 .fas,
+.swal2-popup .swal2-title h2 .fa {
+  color: var(--tenant-primary-color) !important;
+}
+
+.swal2-html-container {
+  color: #333 !important;
+  font-size: 0.95rem !important;
+  text-align: left !important;
+  overflow: visible !important;
+}
+
+@media (min-width: 576px) {
+  .swal2-html-container {
+    font-size: 1rem !important;
+  }
+}
+
+/* === ÍCONOS === */
+/* Preservar colores nativos de SweetAlert2 para animaciones correctas */
+.swal2-icon.swal2-success {
+  border-color: #a5dc86 !important;
+  color: #a5dc86 !important;
+}
+
+.swal2-icon.swal2-error {
+  border-color: #f27474 !important;
+  color: #f27474 !important;
+}
+
+.swal2-icon.swal2-warning {
+  border-color: #f8bb86 !important;
+  color: #f8bb86 !important;
+}
+
+.swal2-icon.swal2-info {
+  border-color: #87ceeb !important;
+  color: #87ceeb !important;
+}
+
+.swal2-icon.swal2-question {
+  border-color: #87ceeb !important;
+  color: #87ceeb !important;
+}
+
+/* Iconos personalizados (fuera de los tipos nativos) pueden usar color primario */
+.swal2-popup:not(.swal2-icon-success):not(.swal2-icon-error):not(.swal2-icon-warning):not(.swal2-icon-info):not(.swal2-icon-question) .swal2-icon {
+  border-color: var(--tenant-primary-color) !important;
+  color: var(--tenant-primary-color) !important;
+}
+
+/* === FORMULARIOS SWEETALERT2 (RESPONSIVE) === */
+.swal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.swal-form input,
+.swal-form select,
+.swal-form textarea {
+  width: 100% !important;
+  border: 1.5px solid #ccc !important;
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+  font-size: 16px !important; /* Previene zoom en iOS */
+  background: #fff !important;
+  color: #222 !important;
+  min-height: 44px !important; /* Touch target mínimo */
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 576px) {
+  .swal-form input,
+  .swal-form select,
+  .swal-form textarea {
+    height: 42px !important;
+    font-size: 0.95rem !important;
+    padding: 8px 12px !important;
+  }
+}
+
+.swal-form textarea {
+  min-height: 80px !important;
+  resize: vertical !important;
+}
+
+@media (max-width: 575px) {
+  .swal-form textarea {
+    min-height: 100px !important;
+  }
+}
+
+.swal-label {
+  font-weight: 600 !important;
+  color: #222 !important;
+  font-size: 0.9rem !important;
+}
+
+@media (min-width: 576px) {
+  .swal-label {
+    font-size: 1rem !important;
+  }
+}
+
+/* === Input Select de SweetAlert2 === */
+.swal2-select {
+  width: 100% !important;
+  border: 1.5px solid #ccc !important;
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+  font-size: 16px !important;
+  background: #fff !important;
+  color: #222 !important;
+  min-height: 44px !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+  margin: 1em auto !important;
+  display: none !important;
+}
+
+/* === BOTONES SWEETALERT2 (RESPONSIVE) === */
+.btn-orange,
+.swal2-confirm {
+  background-color: var(--tenant-primary-color) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.2rem !important;
+  font-size: 0.95rem !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+@media (min-width: 576px) {
+  .btn-orange,
+  .swal2-confirm {
+    padding: 0.6rem 1.4rem !important;
+    width: auto !important;
+    font-size: 1rem !important;
+    height: 42px !important;
+  }
+}
+
+.btn-orange:hover,
+.swal2-confirm:hover {
+  filter: brightness(0.9) !important;
+}
+
+.btn-secondary,
+.swal2-cancel {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 0.5rem !important;
+  padding: 0.75rem 1.2rem !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  min-height: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+@media (min-width: 576px) {
+  .btn-secondary,
+  .swal2-cancel {
+    padding: 0.6rem 1.4rem !important;
+    width: auto !important;
+    font-size: 1rem !important;
+    height: 42px !important;
+  }
+}
+
+.btn-secondary:hover,
+.swal2-cancel:hover {
+  background-color: #f2f2f2 !important;
+}
+
+/* === Alineación de botones en SweetAlert2 (RESPONSIVE) === */
+.swal2-actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  margin-top: 1.5rem !important;
+  flex-direction: column !important;
+  width: 100% !important;
+}
+
+@media (min-width: 576px) {
+  .swal2-actions {
+    flex-direction: row !important;
+    gap: 12px !important;
+  }
+}
+
+.swal2-actions .swal2-confirm,
+.swal2-actions .swal2-cancel,
+.swal2-actions .swal2-styled {
+  margin: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+@media (min-width: 576px) {
+  .swal2-actions .swal2-confirm,
+  .swal2-actions .swal2-cancel,
+  .swal2-actions .swal2-styled {
+    flex: 0 0 auto !important;
+  }
+}
+
+/* === ALERTAS SIMPLES (sin formularios) === */
+.swal-alert-simple {
+  background-color: var(--tenant-secondary-color) !important;
+  border-radius: 1rem !important;
+  text-align: center !important;
+  padding: 2rem 2.5rem !important;
+  max-width: 95vw !important;
+}
+
+@media (min-width: 576px) {
+  .swal-alert-simple {
+    max-width: 500px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .swal-alert-simple {
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+.swal-alert-simple .swal2-html-container {
+  text-align: center !important;
+  font-size: 0.95rem !important;
+}
+
+@media (min-width: 576px) {
+  .swal-alert-simple .swal2-html-container {
+    font-size: 1rem !important;
+  }
+}
+
+/* === TRANSICIÓN SUAVE === */
+.btn,
+.btn-accion {
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* === BOTONES UNIFORMES EN TABLAS === */
+table .btn-accion {
+  width: 38px !important;
+  height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.1rem !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  vertical-align: middle !important;
+}
+
+/* Touch-friendly en móvil */
+@media (max-width: 768px) {
+  table .btn-accion {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+}
+
+/* ✅ Fuerza estilo uniforme para deshabilitados */
+table .btn-accion:disabled,
+table .btn-accion.disabled {
+  background-color: #e6e6e6 !important;
+  color: #555 !important;
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  width: 38px !important;
+  height: 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  table .btn-accion:disabled,
+  table .btn-accion.disabled {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+}
+
+/* Evita display:block de Bootstrap */
+table .btn-accion.btn-secondary.disabled,
+table .btn-accion.btn-secondary:disabled {
+  display: inline-flex !important;
+  width: 38px !important;
+  height: 38px !important;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  table .btn-accion.btn-secondary.disabled,
+  table .btn-accion.btn-secondary:disabled {
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+/* === DATATABLES === */
+.dataTables_wrapper .dataTables_paginate {
+  margin-top: 1rem !important;
+  background: #2d2d2d !important;
+  padding: 10px 16px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  gap: 6px !important;
+  color: var(--tenant-primary-color) !important;
+  border: 1px solid #3d3d3d !important;
+}
+
+/* Botones de paginación: fondo gris oscuro y texto naranja */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  color: var(--tenant-primary-color) !important;
+  border: 1px solid #444 !important;
+  background-color: #2d2d2d !important;
+  background-image: none !important;
+  margin: 0 4px !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  padding: 8px 14px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #3d3d3d !important;
+  color: var(--tenant-secondary-color) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+  border-radius: 8px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #3d3d3d !important;
+  color: var(--tenant-secondary-color) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+  border-radius: 8px !important;
+  background-image: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(var(--bs-secondary-rgb), 0.4) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  color: #666 !important;
+  background-color: #2d2d2d !important;
+  background-image: none !important;
+  border: 1px solid #3d3d3d !important;
+  cursor: default !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #333 !important;
+  color: var(--tenant-secondary-color) !important;
+  border-radius: 6px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #2a2a2a !important;
+  color: var(--tenant-secondary-color) !important;
+  border-radius: 6px !important;
+  background-image: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(var(--bs-secondary-rgb), 0.3) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+  color: #777 !important;
+  background-color: #1f1f1f !important;
+  background-image: none !important;
+  border: 1px solid transparent !important;
+}
+
+.table thead th {
+  background-color: #222 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f8f8f8 !important;
+}
+
+/* Contenedor de acciones: no dejar que nada estire a los botones */
+.acciones-cell {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .acciones-cell {
+    gap: 6px !important;
+  }
+}
+
+/* Tamaño fijo y no elástico */
+table .btn-accion {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  flex: 0 0 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  line-height: 1 !important;
+}
+
+@media (max-width: 768px) {
+  table .btn-accion {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    flex: 0 0 44px !important;
+  }
+}
+
+/* Estado gris deshabilitado, con el mismo tamaño */
+table .btn-accion--disabled,
+table .btn-accion:disabled,
+table .btn-accion.disabled {
+  background-color: #e6e6e6 !important;
+  color: #666 !important;
+  border: 1px solid #e6e6e6 !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  flex: 0 0 38px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  table .btn-accion--disabled,
+  table .btn-accion:disabled,
+  table .btn-accion.disabled {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    flex: 0 0 44px !important;
+  }
+}
+
+/* Si por alguna razón se cuela un btn-secondary disabled, lo neutralizamos */
+table .btn-accion.btn-secondary.disabled,
+table .btn-accion.btn-secondary:disabled {
+  display: inline-flex !important;
+  width: 38px !important;
+  min-width: 38px !important;
+  height: 38px !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  table .btn-accion.btn-secondary.disabled,
+  table .btn-accion.btn-secondary:disabled {
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+/* === SCROLL HORIZONTAL PARA TABLA === */
+.table-responsive {
+  width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+/* Ancho mínimo de la tabla para forzar scroll horizontal en pantallas pequeñas */
+table.display,
+.dataTable.table {
+  min-width: 1000px !important;
+}
+
+@media (max-width: 992px) {
+  table.display,
+  .dataTable.table {
+    min-width: 1000px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  table.display,
+  .dataTable.table {
+    min-width: 900px !important;
+  }
+}
+
+/* Scrollbar personalizado con colores de la marca */
+.table-responsive::-webkit-scrollbar {
+  height: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+  background: var(--tenant-primary-color);
+  border-radius: 5px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+  filter: brightness(0.9);
+}
+
+/* Scrollbar para Firefox */
+.table-responsive {
+  scrollbar-width: auto;
+  scrollbar-color: var(--tenant-primary-color) #f1f1f1;
+}
+
+/* Botones de DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 8px 14px !important;
+  touch-action: manipulation !important;
+  color: var(--tenant-primary-color) !important;
+  border: 1px solid #444 !important;
+  background-color: #2d2d2d !important;
+  background-image: none !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #3d3d3d !important;
+  color: var(--tenant-secondary-color) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+  border-radius: 8px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #3d3d3d !important;
+  color: var(--tenant-secondary-color) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+  border-radius: 8px !important;
+  background-image: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(var(--bs-secondary-rgb), 0.4) !important;
+  border: 1px solid var(--tenant-primary-color) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  color: #666 !important;
+  background-color: #2d2d2d !important;
+  background-image: none !important;
+  border: 1px solid #3d3d3d !important;
+  cursor: default !important;
+}
+
+@media (max-width: 768px) {
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+  }
+
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* En móvil, ajustar el wrapper para mejor UX con scroll horizontal */
+  .dataTables_wrapper {
+    padding-bottom: 10px;
+  }
+}
+
+/* === 🎨 ESTILOS PARA MODAL DE ORDEN DE PAGO (RESPONSIVE) === */
+
+/* Contenedor principal de la confirmación */
+.orden-confirmacion-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Modal de orden creada - tamaño responsive */
+.orden-creada-popup {
+  max-width: 95vw !important;
+  width: 600px !important;
+}
+
+@media (max-width: 768px) {
+  .orden-creada-popup {
+    width: 95vw !important;
+    max-width: 95vw !important;
+    padding: 1.5rem 1rem !important;
+  }
+}
+
+/* Contenedor de imagen del comprobante */
+.comprobante-imagen-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.comprobante-imagen {
+  max-width: 100%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .comprobante-imagen {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comprobante-imagen {
+    max-height: 250px;
+  }
+}
+
+/* Contenedor de PDF del comprobante */
+.comprobante-pdf-container {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.comprobante-iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .comprobante-iframe {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .comprobante-iframe {
+    height: 220px;
+  }
+}
+
+/* Responsive para el contenido HTML del modal */
+.orden-creada-popup .swal2-html-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Scroll si el contenido es muy largo */
+.orden-creada-popup .swal2-html-container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .orden-creada-popup .swal2-html-container {
+    max-height: 60vh;
+  }
+}

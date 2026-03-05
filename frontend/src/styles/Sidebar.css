@@ -1,0 +1,218 @@
+/* === SIDEBAR BASE === */
+.sidebar {
+  position: relative;
+  left: 0;
+  width: 240px;
+  height: calc(100vh - 56px);
+  background-color: #1a1a1a;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* === SCROLLBAR PERSONALIZADO === */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--tenant-primary-color);
+  border-radius: 3px;
+}
+
+.sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--tenant-primary-color) #111;
+}
+
+/* === NAV LINKS === */
+.sidebar .nav-link {
+  color: #ccc;
+  margin-bottom: 6px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: var(--tenant-primary-color);
+  color: #fff !important;
+}
+
+.sidebar .text-muted {
+  color: #888 !important;
+}
+
+/* === SECONDARY SIDEBAR STYLES === */
+.sidebar {
+  background-color: #111;
+  color: #fff;
+  height: 100vh;
+}
+
+/* === DIVIDERS === */
+.sidebar-divider {
+  border-color: #333;
+  margin: 0.6rem 0;
+}
+
+/* === SIDEBAR TITLES/SECTIONS === */
+.sidebar-title {
+  color: var(--tenant-primary-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.nav-link {
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--tenant-primary-color);
+}
+
+.active-link {
+  color: var(--tenant-primary-color);
+  font-weight: 600;
+}
+
+/* === ICONS IN SIDEBAR === */
+.nav-link .me-2 {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* === RESPONSIVE - TABLET === */
+@media (max-width: 991.98px) and (min-width: 576px) {
+  .sidebar {
+    width: 200px;
+    padding: 0.75rem;
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .sidebar-title {
+    font-size: 0.8rem;
+  }
+
+  .nav-link svg,
+  .nav-link .fa-icon {
+    font-size: 0.9rem;
+  }
+}
+
+/* === RESPONSIVE - MOBILE === */
+@media (max-width: 575.98px) {
+  .sidebar {
+    width: 100%;
+    max-width: 280px;
+    height: calc(100vh - 56px);
+    padding: 0.75rem;
+  }
+
+  .sidebar .nav-link {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.5rem;
+    margin-bottom: 4px;
+  }
+
+  .sidebar-title {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .sidebar-divider {
+    margin: 0.5rem 0;
+  }
+
+  /* Touch-friendly targets */
+  .nav-link,
+  .sidebar-title {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Icons larger on mobile */
+  .nav-link svg,
+  .nav-link .fa-icon {
+    font-size: 1.1rem;
+  }
+
+  .nav-link .me-2 {
+    min-width: 24px;
+    text-align: center;
+  }
+}
+
+/* === LANDSCAPE MOBILE === */
+@media (max-height: 500px) and (orientation: landscape) {
+  .sidebar {
+    height: calc(100vh - 50px);
+    padding: 0.5rem;
+  }
+
+  .sidebar .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+  }
+
+  .sidebar-title {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .sidebar-divider {
+    margin: 0.3rem 0;
+  }
+}
+
+/* === BADGE CONTADOR DE PAGOS PENDIENTES === */
+.sidebar .nav-link .badge {
+  background-color: #dc3545;
+  color: #fff;
+  font-weight: 600;
+  animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Asegurar que el badge no interfiera con el layout del nav-link */
+.sidebar .nav-link.position-relative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

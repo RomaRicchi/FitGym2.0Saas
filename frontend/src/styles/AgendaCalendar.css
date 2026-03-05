@@ -1,0 +1,155 @@
+/* 🧱 CONTENEDOR GENERAL */
+.agenda-container {
+  padding: 1rem;
+  transition: all 0.3s ease; /* fluidez al ocultar sidebar */
+}
+
+/* 🧭 TÍTULO */
+.agenda-title {
+  text-align: center;
+  color: var(--tenant-primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 🎛️ FILTROS (centrados e iguales) */
+.agenda-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.agenda-filtros > div {
+  width: 250px;
+  text-align: center;
+}
+
+.agenda-filtros label {
+  display: block;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.agenda-filtros select {
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--tenant-primary-color);
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.agenda-filtros select:hover,
+.agenda-filtros select:focus {
+  border-color: var(--tenant-secondary-color);
+  box-shadow: 0 0 5px rgba(var(--bs-secondary-rgb), 0.4);
+  outline: none;
+}
+
+/* 🗓️ CALENDARIO (contenedor blanco con sombra) */
+.agenda-calendar-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* 📅 CABECERA (botones y días) */
+.fc .fc-toolbar-chunk button {
+  background-color: var(--tenant-primary-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 14px;
+  transition: all 0.2s ease;
+}
+
+.fc .fc-toolbar-chunk button:hover {
+  filter: brightness(0.9);
+}
+
+.fc .fc-toolbar-title {
+  color: #222;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 🔹 ENCABEZADO DE DÍAS (LUN, MAR, MIÉ...) */
+.fc .fc-col-header-cell {
+  background: linear-gradient(180deg, #333, #111) !important;
+  color: #ffb74d !important;
+  border: 1px solid #444 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.fc .fc-col-header-cell a {
+  color: #ff9800 !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  transition: color 0.2s ease;
+}
+
+.fc .fc-col-header-cell a:hover {
+  color: #ffc107 !important;
+}
+
+/* ⏰ COLUMNA DE HORAS */
+.fc .fc-timegrid-slot-label {
+  background-color: #222 !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-right: 1px solid #444 !important;
+}
+
+/* 🔲 CELDAS */
+.fc .fc-timegrid-slot {
+  border-color: #eee;
+}
+
+/* 🟧 EVENTOS */
+.fc-event {
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  color: #000 !important;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease-in-out;
+}
+
+.fc-event:hover {
+  transform: scale(1.03);
+  filter: brightness(1.1);
+}
+
+/* 💡 Ajuste fluido al cambiar ancho (sidebar oculto) */
+.agenda-calendar-container .fc {
+  width: 100% !important;
+  transition: width 0.3s ease;
+}
+
+/* Opcional: mejora visual en pantallas grandes */
+@media (min-width: 1200px) {
+  .agenda-calendar-container {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+}
+.agenda-calendar-container {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.agenda-calendar-container .fc {
+  width: 100% !important;
+  transition: width 0.3s ease;
+}

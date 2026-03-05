@@ -1,0 +1,136 @@
+/* === 🎨 Estilo exclusivo para el modal de Rutinas (Crear / Editar) === */
+
+.swal2-card-rutina {
+  background-color: var(--tenant-secondary-color) !important; /* Naranja SpazioMg */
+  border-radius: 1rem !important;
+  max-width: 640px !important;
+  padding: 1.8rem 2.2rem !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3) !important;
+  color: #222 !important;
+  margin: 0 auto !important;
+}
+
+/* === Ocultar selects creados automáticamente por SweetAlert2 === */
+.swal2-select {
+  display: none !important;
+}
+
+/* === Checkbox con estilo activo === */
+.swal2-popup input[type="checkbox"] {
+  transform: scale(1.3) !important;
+  accent-color: var(--tenant-primary-color) !important;
+  cursor: pointer;
+}
+
+/* Selectores más específicos para checkboxes con clases */
+.swal2-popup input[type="checkbox"].swal-checkbox,
+.swal2-popup .swal-checkbox,
+.swal2-popup .checkbox-group input[type="checkbox"],
+.swal2-popup .checkbox-group .swal-checkbox {
+  transform: scale(1.3) !important;
+  accent-color: var(--tenant-primary-color) !important;
+  cursor: pointer;
+}
+
+/* === Centrado vertical del modal === */
+.swal2-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 !important;
+  min-height: 100vh !important;
+}
+
+/* === Formulario === */
+.swal-form-rutina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+/* === Grupo label + input (label arriba) === */
+.swal-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* === Labels === */
+.swal-label {
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+  margin: 0;
+}
+
+/* === Inputs y textareas === */
+.swal2-input,
+.swal2-textarea {
+  width: 100% !important;
+  border: 1.5px solid #ccc !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  background-color: #fff !important;
+  color: #222 !important;
+  font-size: 1rem !important;
+  box-sizing: border-box !important;
+}
+
+.swal2-input:focus,
+.swal2-textarea:focus {
+  border-color: var(--tenant-secondary-color) !important;
+  box-shadow: 0 0 0 2px rgba(var(--bs-primary-rgb), 0.25) !important;
+  outline: none !important;
+}
+
+/* === Ajuste textarea === */
+.swal2-textarea {
+  min-height: 90px !important;
+  resize: vertical !important;
+}
+
+/* === Botones === */
+.swal2-confirm {
+  background-color: var(--tenant-primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+  transition: background 0.25s ease !important;
+}
+.swal2-confirm:hover {
+  filter: brightness(0.9) !important;
+}
+
+.swal2-cancel {
+  background-color: #fff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 0.5rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 600 !important;
+}
+.swal2-cancel:hover {
+  background-color: #f4f4f4 !important;
+}
+
+/* === Contenedor de botones === */
+.swal2-actions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-top: 1.2rem !important;
+}
+
+/* === Responsive === */
+@media (max-width: 576px) {
+  .swal2-card-rutina {
+    max-width: 90% !important;
+    padding: 1.2rem 1.5rem !important;
+  }
+}

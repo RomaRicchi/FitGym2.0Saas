@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Legal - GymSaaS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .card.badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff6b35;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card .badge {
+            position: relative;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .info-box {
+            background: #fff8f0;
+            border-left: 4px solid #ff6b35;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .info-box h3 {
+            color: #ff6b35;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .info-box p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .print-all-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #ff6b35;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .print-all-btn:hover {
+            background: #e55a2b;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📜 Documentación Legal</h1>
+        <p class="subtitle">GymSaaS - Plataforma de Gestión de Gimnasios</p>
+        <p class="subtitle">
+            Versión 2.0 - Febrero 2026 | <strong>19 secciones</strong> en Términos y Condiciones
+        </p>
+
+        <button class="print-all-btn" onclick="window.print()">
+            🖨️ Imprimir esta página
+        </button>
+
+        <div class="cards-container">
+            <a href="terminos-condiciones-pdf.html" class="card">
+                <span class="card-icon">📜</span>
+                <span class="card-title">Términos y Condiciones</span>
+                <span class="card-desc">Contrato de servicio, planes, pagos, cancelaciones, renovación automática, trial y fuerza mayor</span>
+                <span class="card-badge">19 secciones</span>
+            </a>
+
+            <a href="politica-privacidad-pdf.html" class="card">
+                <span class="card-icon">🔒</span>
+                <span class="card-title">Política de Privacidad</span>
+                <span class="card-desc">Protección de datos personales (Ley 25.326), derechos ARCO</span>
+                <span class="card-badge">11 secciones</span>
+            </a>
+
+            <a href="politica-cookies-pdf.html" class="card">
+                <span class="card-icon">🍪</span>
+                <span class="card-title">Política de Cookies</span>
+                <span class="card-desc">Tipos de cookies, Google Analytics, administración</span>
+                <span class="card-badge">8 secciones</span>
+            </a>
+
+            <a href="plantillas/" class="card" style="border: 2px dashed #ff6b35;">
+                <span class="card-icon">📄</span>
+                <span class="card-title">Plantillas en Blanco</span>
+                <span class="card-desc">Modelos para completar con abogado - Sin rellenar</span>
+                <span class="card-badge" style="background: #ff6b35;">3 documentos</span>
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>📖 Cómo usar estos documentos</h3>
+            <p>
+                <strong>1. Visualizar:</strong> Haz clic en cualquiera de las tarjetas arriba para ver el documento completo.
+            </p>
+            <p>
+                <strong>2. Exportar a PDF:</strong> Dentro de cada documento, usa el botón "🖨️ Imprimir / Guardar PDF" y selecciona "Guardar como PDF" en la ventana de impresión.
+            </p>
+            <p>
+                <strong>3. Enviar a clientes:</strong> Puedes compartir el enlace directo o adjuntar el PDF generado en emails.
+            </p>
+            <p style="margin-top: 15px; padding: 10px; background: #fff3cd; border-radius: 5px; font-size: 13px;">
+                <strong>⚠️ Nota Legal:</strong> Estos documentos son una base sólida pero DEBEN ser revisados por un abogado antes de su uso en producción.
+            </p>
+        </div>
+
+        <div class="info-box" style="background: #f0f8ff; border-left-color: #17a2b8; margin-top: 20px;">
+            <h3 style="color: #17a2b8;">⚖️ Marco Legal</h3>
+            <p>Estos documentos cumplen con:</p>
+            <ul style="margin-left: 20px; color: #666; font-size: 14px;">
+                <li>Ley 25.326 de Protección de Datos Personales (Argentina)</li>
+                <li>Reglamento (UE) 2016/679 (GDPR) - para usuarios europeos</li>
+                <li>CCPA - para usuarios de California</li>
+                <li>Código Civil y Comercial de la Nación</li>
+            </ul>
+        </div>
+
+        <div class="info-box" style="background: #fff8f0; border-left-color: #ff6b35; margin-top: 20px;">
+            <h3 style="color: #ff6b35;">📄 Plantillas en Blanco</h3>
+            <p style="margin: 0 0 10px 0;">
+                También disponemos <strong>plantillas en blanco</strong> para completar con tu abogado:
+            </p>
+            <ul style="margin-left: 20px; font-size: 14px;">
+                <li>Términos y Condiciones (17 secciones en blanco)</li>
+                <li>Política de Privacidad (11 secciones en blanco)</li>
+                <li>Política de Cookies (7 secciones en blanco)</li>
+            </ul>
+            <p style="margin: 10px 0 0 0;">
+                <strong>¿Para quién son?</strong> Para abogados que necesitan redactar documentos legales desde cero.
+            </p>
+            <p style="margin: 5px 0 0 0;">
+                <strong>⚠️ Importante:</strong> Estas plantillas no tienen validez legal hasta ser completadas y firmadas por un abogado matriculado.
+            </p>
+        </div>
+
+        <div class="footer">
+            <hr style="border: none; border-top: 1px solid #eee; margin-bottom: 10px;">
+            <p><strong>GymSaaS</strong> © <script>document.write(new Date().getFullYear())</script> - Todos los derechos reservados</p>
+            <p>Última actualización: <script>document.write(new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' }))</script></p>
+            <p style="margin-top: 10px;">
+                <strong>Contacto Legal:</strong> privacy@gymsaas.com | <strong>AAIP:</strong> derechoacceso@jgm.gob.ar
+            </p>
+        </div>
+    </div>
+</body>
+</html>

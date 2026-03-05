@@ -1,0 +1,258 @@
+/* 🔸 Fondo general */
+.planes-socio-container {
+  min-height: 100vh;
+  background: transparent; /* ✅ sin fondo negro */
+  color: #fff;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔸 Título */
+.planes-socio-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--tenant-primary-color);
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+/* 🔸 Grid 2x2 fijo y centrado */
+.planes-socio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 260px); /* ✅ 2 columnas fijas */
+  grid-template-rows: repeat(2, 200px); /* ✅ 2 filas fijas */
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* 🔸 Card de plan */
+.plan-card {
+  background: var(--tenant-primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(var(--bs-secondary-rgb), 0.6);
+}
+
+/* Estado deshabilitado por límite mensual */
+.plan-card:disabled {
+  background: #999;
+  cursor: not-allowed;
+  transform: none;
+  width: 100%;
+  height: 100%;
+}
+
+.plan-card:disabled:hover {
+  transform: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔸 Ícono principal */
+.plan-card .plan-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 🔸 Nombre del plan */
+.plan-card .plan-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+/* 🔸 Detalles del plan */
+.plan-card .plan-info {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.plan-card .plan-info svg {
+  margin-right: 6px;
+  color: #fff;
+}
+
+/* 🔸 Efecto clic */
+.plan-card:active {
+  transform: scale(0.98);
+}
+
+/* 🔸 Corrección visual del SweetAlert2 */
+.swal2-popup {
+  padding: 2rem 2rem 2.5rem 2rem !important;
+}
+
+.swal2-input[type="file"] {
+  display: block !important;
+  width: 100% !important;
+  margin-top: 1rem !important;
+  font-size: 1rem !important;
+  color: #333 !important;
+  background-color: #fff !important;
+  border-radius: 6px !important;
+  padding: 8px !important;
+}
+
+.swal2-input[type="file"]::file-selector-button {
+  background-color: var(--tenant-primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  margin-right: 10px !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+}
+
+/* 💪 Fix definitivo: input de archivo visible completo dentro del Swal */
+.swal2-html-container {
+  overflow: visible !important; /* evita que se recorte */
+}
+
+.swal2-popup {
+  min-height: 280px !important; /* da más espacio al contenido */
+  padding-bottom: 2.5rem !important;
+}
+
+/* 🎯 Alineación fina del input file en SweetAlert2 */
+.swal2-input[type="file"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0.5rem !important;
+  padding: 6px 10px !important;
+  margin-top: 1.2rem !important;
+  font-size: 0.95rem !important;
+  height: 42px !important; /* uniforma altura */
+  background: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 8px !important;
+  box-sizing: border-box !important;
+}
+
+/* 🔸 Botón naranja dentro del input */
+.swal2-input[type="file"]::file-selector-button {
+  background-color: var(--tenant-primary-color) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 7px 14px !important;
+  cursor: pointer !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  align-self: center !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-in-out;
+}
+
+/* ✨ Hover más suave */
+.swal2-input[type="file"]::file-selector-button:hover {
+  background-color: #ff8533 !important;
+}
+
+/* 🔸 Corrige el espacio interno del contenedor HTML del modal */
+.swal2-html-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  overflow: visible !important;
+}
+
+/* ==========================================
+   RESPONSIVE - MÓVILES
+   ========================================== */
+
+/* Móvil pequeño (hasta 480px) */
+@media (max-width: 479.98px) {
+  .planes-socio-container {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .planes-socio-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .planes-socio-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.2rem;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .plan-card {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    min-height: 180px;
+  }
+
+  .plan-card .plan-icon {
+    font-size: 1.6rem;
+  }
+
+  .plan-card .plan-title {
+    font-size: 1.1rem;
+  }
+
+  .plan-card .plan-info {
+    font-size: 0.85rem;
+  }
+}
+
+/* Móvil mediano (480px - 576px) */
+@media (min-width: 480px) and (max-width: 575.98px) {
+  .planes-socio-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+
+  .planes-socio-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet (576px - 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .planes-socio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+
+  .planes-socio-title {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop pequeño (768px - 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .planes-socio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}

@@ -1,0 +1,181 @@
+.evolucion-title {
+  color: var(--tenant-primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.peso-ideal {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(var(--bs-secondary-rgb), 0.9), 0 0 15px rgba(var(--bs-secondary-rgb), 0.4);
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+}
+
+.peso-ideal span {
+  color: var(--tenant-primary-color);
+  font-weight: 700;
+}
+
+/* Botones de acción uniformes */
+.btn-action {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0 !important;
+  color: #fff !important;
+  font-size: 1.05rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-action:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.btn-orange.btn-action {
+  background-color: var(--tenant-primary-color) !important;
+}
+
+.btn-orange.btn-action:hover {
+  filter: brightness(0.9);
+}
+
+.btn-editar-evolucion {
+  background-color: var(--tenant-primary-color) !important;
+}
+
+.btn-editar-evolucion:hover {
+  filter: brightness(0.9);
+}
+
+.btn-red.btn-action {
+  background-color: #dc3545 !important;
+}
+
+.btn-eliminar-evolucion {
+  background-color: #dc3545 !important;
+}
+
+.btn-eliminar-evolucion:hover {
+  background-color: #e55361;
+}
+
+.btn-red {
+  background-color: #dc3545;
+}
+
+.btn-red:hover {
+  background-color: #e55361;
+}
+
+/* === Diseño responsive para formularios de evolución (SweetAlert) === */
+.swal2-container .swal-evolucion-popup,
+.swal2-container .swal-evolucion-popup.swal2-card-style,
+.swal2-container .swal-evolucion-popup.swal2-popup.swal2-modal {
+  width: min(520px, 94vw) !important;
+  max-width: 520px !important;
+  padding: 12px 14px 14px !important;
+  max-height: 90vh;
+  background: var(--tenant-secondary-color) !important; /* naranja */
+  color: #222 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.swal2-container .swal-evolucion-popup .swal2-html-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.swal2-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  max-height: 76vh;
+  overflow-y: auto;
+   /* evita que el contenido se desborde horizontalmente */
+  overflow-x: hidden;
+  padding-right: 4px; /* deja espacio para el scrollbar sin mover el layout */
+  padding-left: 2px;
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  .swal2-grid {
+    grid-template-columns: 1fr;
+    max-height: 82vh;
+    gap: 6px;
+  }
+  .swal2-container .swal-evolucion-popup,
+  .swal2-container .swal-evolucion-popup.swal2-card-style,
+  .swal2-container .swal-evolucion-popup.swal2-popup.swal2-modal {
+    padding: 10px 12px 12px !important;
+    width: 95vw !important;
+    max-width: 95vw !important;
+  }
+}
+
+.swal2-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0; /* permite que los inputs se encojan dentro de la grilla */
+  width: 100%;
+}
+
+.swal2-field.full-row {
+  grid-column: 1 / -1;
+}
+
+.swal2-grid .form-control,
+.swal2-grid .swal2-input,
+.swal2-grid .swal2-textarea {
+  width: 100%;
+  max-width: 100%;
+  font-size: 0.9rem;
+  padding: 6px 9px;
+  box-sizing: border-box;
+}
+
+.swal2-container .swal-evolucion-popup label {
+  color: #222 !important;
+}
+
+.btn-evolucion-confirm {
+  background-color: var(--tenant-primary-color) !important;
+  border: none !important;
+  min-width: auto !important;
+  width: auto !important;
+}
+
+/* === Tamaño reducido del gráfico de evolución física === */
+.evolucion-chart {
+  max-width: 880px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .evolucion-chart {
+    max-width: 100%;
+    height: 240px;
+  }
+}
