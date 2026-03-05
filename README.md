@@ -358,7 +358,7 @@ Antes de iniciar, configura:
 **Desarrollado por:**
 
 **Romanela Ricchiardi**
-- 📧 [romaela.ricchiardi@gmail.com](mailto:romaela.ricchiardi@gmail.com)
+- 📧 [roma.ricchiardi@gmail.com](mailto:roma.ricchiardi@gmail.com)
 - 💼 [GitHub](https://github.com/RomaRicchi) | [LinkedIn](https://linkedin.com)
 
 **Colaborador:**
@@ -366,7 +366,7 @@ Antes de iniciar, configura:
 
 ---
 
-**Desarrollo para:** **Zinnia Code**
+**Desarrollo por:** **Zinnia Code**
 
 🏢 **Empresa de Desarrollo de Software**
 
@@ -403,6 +403,7 @@ Este proyecto es parte de un trabajo académico y es propiedad de sus autores.
 - MercadoPago por la documentación y soporte técnico
 
 ---
+
 
 ## 🖥️ Vista del Sistema
 
