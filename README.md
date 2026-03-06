@@ -359,7 +359,7 @@ Antes de iniciar, configura:
 
 **Romanela Ricchiardi**
 - 📧 [roma.ricchiardi@gmail.com](mailto:roma.ricchiardi@gmail.com)
-- 💼 [GitHub](https://github.com/RomaRicchi) | [LinkedIn](https://linkedin.com)
+- 💼 [GitHub](https://github.com/RomaRicchi) | [LinkedIn](https://linkedin.com/in/romanela-ricchiardi-885284118/)
 
 **Colaborador:**
 **Fermin Fernandez**
@@ -386,7 +386,7 @@ Universidad de La Punta (ULP)
 El código fuente, configuraciones, archivos de entorno y documentación técnica detallada son propiedad exclusiva de **Zinnia Code** y los desarrolladores involucrados. Cualquier reproducción, distribución o uso no autorizado está prohibido.
 
 Para consultas sobre el proyecto, contactar a:
-- 📧 [romaela.ricchiardi@gmail.com](mailto:romaela.ricchiardi@gmail.com)
+- 📧 [romaela.ricchiardi@gmail.com](mailto:roma.ricchiardi@gmail.com)
 
 ---
 
