@@ -407,7 +407,12 @@ Este proyecto es parte de un trabajo académico y es propiedad de sus autores.
 
 ## 🖥️ Vista del Sistema
 
-<img width="1913" height="869" alt="image" src="https://github.com/user-attachments/assets/1e1b197c-4d4a-45c3-9736-2970085feec3" />
+<img width="1909" height="872" alt="image" src="https://github.com/user-attachments/assets/fb2603a2-2fe0-4e60-88d2-a69b67c57f67" />
+<img width="1909" height="872" alt="image" src="https://github.com/user-attachments/assets/fb2603a2-2fe0-4e60-88d2-a69b67c57f67" />
+<img width="1920" height="826" alt="image" src="https://github.com/user-attachments/assets/2ec2892b-ccac-4f9f-9522-149901281608" />
+<img width="1920" height="826" alt="image" src="https://github.com/user-attachments/assets/2ec2892b-ccac-4f9f-9522-149901281608" />
+
+
 <img width="1895" height="880" alt="image" src="https://github.com/user-attachments/assets/923ab56c-114e-4bc4-8d8d-17583b5b3125" />
 <img width="1913" height="860" alt="image" src="https://github.com/user-attachments/assets/2df13ed3-80c5-40a0-acd5-44c9ea2eca93" />
 <img width="1906" height="868" alt="image" src="https://github.com/user-attachments/assets/41df292e-3eb8-4572-b8a6-f010a04d9f78" />
